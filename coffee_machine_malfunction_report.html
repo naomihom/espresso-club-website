@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>טופס דיווח על תקלה במכונת קפה</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    h2 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input[type="text"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: right;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body dir="rtl">
+  <div class="container">
+    <h2>טופס דיווח על תקלה במכונת קפה</h2>
+    <p>לקוח/ה יקר/ה אנא מלא/י את הטופס הבא ונציג שלנו יחזור אליך בהקדם האפשרי. כאן לשירותך תמיד, אספרסו קלאב.</p>
+    <form action="#" method="post">
+      <label for="fault-description">תיאור התקלה:</label>
+      <textarea id="fault-description" name="fault-description" placeholder="תיאור פיזי של התקלה" required></textarea>
+
+      <label for="fault-type">סוג התקלה:</label>
+      <select id="fault-type" name="fault-type" required>
+        <option value="" disabled selected>בחר סוג תקלה</option>
+        <option value="לא נפתחת המכונה">לא נפתחת המכונה</option>
+        <option value="הקפה לא יוצא חם">הקפה לא יוצא חם</option>
+        <option value="המכונה לא מתחילה">המכונה לא מתחילה</option>
+        <option value="נזילות מים">נזילות מים</option>
+        <option value="טמפרטורה לא יציבה">טמפרטורה לא יציבה</option>
+        <option value="הודעות שגיאה">הודעת שגיאה</option>
+        <option value="רעש לא רגיל">רעש לא רגיל</option>
+        <option value="שחיקה כללית">שחיקה כללית</option>
+      </select>
+
+      <label for="additional-notes">הערות נוספות:</label>
+      <textarea id="additional-notes" name="additional-notes" placeholder="תיאור נוסף או הערות"></textarea>
+
+      <label for="customer-name">שם מלא:</label>
+      <input type="text" id="customer-name" name="customer-name" placeholder="שם מלא של הלקוח" required>
+
+      <label for="customer-id">תעודת זהות:</label>
+      <input type="text" id="customer-id" name="customer-id" placeholder="תעודת זהות" required>
+
+      <label for="machine-type">סוג המכונה:</label>
+      <input type="text" id="machine-type" name="machine-type" placeholder="סוג המכונה" required>
+
+      <label for="customer-phone">טלפון ליצירת קשר:</label>
+      <input type="text" id="customer-phone" name="customer-phone" placeholder="מספר טלפון ליצירת קשר" required>
+
+      <label for="media-upload">העלאת תמונה או סרטון (אופציונלי):</label>
+      <input type="file" id="media-upload" name="media-upload" accept="image/*,video/*">
+      <br>
+      <br>
+      <button type="submit">שליחת טופס</button>
+    </form>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
